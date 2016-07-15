@@ -1,0 +1,10 @@
+@import 'https://fonts.googleapis.com/css?family=Abel|Lato:400,400i,700,700i&subset=latin-ext';
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Abel', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+}
