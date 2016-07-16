@@ -6,7 +6,7 @@
   NmcApp.events = (function() {
     var config = function() {
       $('.nmc-top-bar__action-button').on('click', toggleMenuClick);
-      $('.capa-post').on('mouseenter mouseleave', hoverCapa);
+      $('a.capa-post').on('mouseenter mouseleave', hoverCapa);
     }
 
     var toggleMenuClick = function(e) {
