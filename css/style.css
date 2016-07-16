@@ -91,3 +91,94 @@ body {
 	color: rgba(90,28,87,1);
 	background-color: rgba(254,190,36,1);
 }
+
+.capa-post {
+	background-repeat: no-repeat;
+	min-height: 20rem;
+	background-size: cover;
+	background-position: center;
+	padding: 1rem;
+	display: block;
+	background-blend-mode: overlay;
+}
+
+.capa-post.capa-post--destaque {
+	min-height: 26rem;
+}
+
+.capa-post h1 {
+	font-size: 1.8rem;
+	color: rgba(238,42,114,1);
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	line-height: 120%;
+}
+
+.capa-post h1 span {
+	background-color: rgba(254,190,36,1);
+	padding: 0 .2rem;
+}
+
+.capa-post .capa-post__detalhes {
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+	background-color: rgba(254,190,36,1);
+	padding: 0 .2rem;
+	color: rgba(90,38,87,1);
+	display: none;
+}
+
+.capa-post:hover .capa-post__detalhes {
+	display: block;
+	font-size: .8rem;
+	padding: .4rem;
+}
+
+.capa-post__detalhes h2 {
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif;
+	font-size: 1rem;
+	text-transform: none;
+	color: rgba(238,42,114,1);
+}
+
+.capa-post.capa-post--destaque h1 {
+	font-size: 1.8rem;
+}
+
+.capa-post.capa-post--destaque h2 {
+	font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 40.063em) {
+	.capa-post:not(.capa-post--destaque) {
+		margin: .4rem;
+	}
+}
+
+.row:nth-child(odd) .capa-post:not(.capa-post--destaque):nth-child(1), .row:nth-child(even) .capa-post:not(.capa-post--destaque):nth-child(2) {
+	flex: 2;
+}
+
+.pages-navigation {
+	padding: 0;
+}
+
+.pages-navigation a {
+	display: block;
+	background-color: rgba(254,190,36,1);
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	text-transform: lowercase;
+	transition: .3s background ease-in-out, .3s color ease-in-out;
+}
+
+.pages-navigation a:hover {
+	color: rgba(254,190,36,1);
+	background-color: #fff;
+}
+
+footer {
+	background-color: rgba(90,38,87,1);
+	padding: 1rem;
+}
